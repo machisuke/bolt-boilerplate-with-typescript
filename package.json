@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "yarn run build && node dist/app.js",
+    "dev": "yarn run build:live",
+    "build": "tsc",
+    "build:live": "nodemon",
+    "ts-node": "ts-node"
   },
   "author": "",
   "license": "ISC",
